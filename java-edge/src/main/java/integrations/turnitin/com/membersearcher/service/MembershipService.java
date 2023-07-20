@@ -29,14 +29,14 @@ public class MembershipService {
 
 	public CompletableFuture<MembershipList> fetchAllMembershipsWithUsers() {
 		return membershipBackendClient.fetchMemberships()
-				.thenCompose(users -> membershipBackendClient.fetchUsers()
+				.thenCompose(members -> membershipBackendClient.fetchUsers()
 							.thenApply(userList -> {
 
-								for (int i = 0; i < users.getMemberships().size(); i++) {
+								for (int i = 0; i < members.getMemberships().size(); i++) {
 
-									users.getMemberships().get(i).setUser(userList.getUsers().get(i));
+									members.getMemberships().get(i).setUser(userList.getUsers().get(i));
 								}
-								return users;
+								return members;
 							}));
 						}
 }
