@@ -22,7 +22,7 @@ public class MembershipService {
 	 *
 	 * @return A CompletableFuture containing a fully populated MembershipList object.
 	 * 
-	 * Here the code now users fetchUsers() method to fetch all users in a single API call.
+	 * Here the code now uses fetchUsers() method to fetch all users in a single API call.
 	 * We then populate the list of users in the MembershipList object.
 	 * 
 	 */
