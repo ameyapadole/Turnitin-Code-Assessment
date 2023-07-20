@@ -1,3 +1,6 @@
+#I have added a Turnitin Coding Assessment Report.pdf, please take a look.
+
+
 # DO NOT FORK!
 **In the interest of fairness for everyone, please DO NOT fork this repo through Github. This is to avoid accidental sharing of the solution. If you are taking the test, please select "Use this template" to create your own repo and get started instead.**
 
